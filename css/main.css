@@ -1,0 +1,758 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+
+}
+
+.wrapper {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(26, 14, 1, 1) 100%);
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.conteiner {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 50px 0;
+}
+
+.logo {
+    height: 60px;
+    width: 60px;
+}
+
+header nav {
+    float: right;
+    width: 50%;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li.active::after {
+    height: 9px;
+    width: 50px;
+    background: #DC7000;
+    content: '';
+    display: block;
+    border-radius: 5px;
+    position: relative;
+    top: 10px;
+    left: -15px;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li:not(.active):not(.btn) a:hover {
+    border-bottom: 5px solid #DC7000;
+}
+
+header nav ul li.btn a {
+    background: #DC7000;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease;
+}
+
+header nav ul li.btn a:hover {
+    background: #572e02;
+
+}
+
+.hero {
+    padding: 100px;
+    position: relative;
+}
+
+.hero--info {
+    width: 530px;
+    padding-top: 70px;
+}
+
+.hero--info .btn {
+    background: #FA8305;
+    color: #fff;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 17px;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.hero--info h2 {
+    color: #ef891b;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero--info h1 {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-weight: 500;
+    margin: 30px 0px;
+    line-height: 170%;
+}
+
+.hero img {
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    padding-right: 180px;
+    width: 700px;
+
+}
+
+/*Инфа про музеи*/
+.trending {
+    padding: 50px;
+}
+
+.trending .block img {
+    width: 300px;
+    height: 270px;
+    border-radius: 15px;
+}
+
+.trending h3 {
+    font-size: 31px;
+    font-weight: 600;
+}
+
+.trending .see--all {
+    color: #fff;
+    background: #25211D;
+    padding: 12px 30px;
+    float: right;
+    display: block;
+    transition: all 500ms ease;
+    border-radius: 5px;
+}
+
+.trending .see--all:hover {
+    transform: scale(1.1);
+}
+
+.trending .museum {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+    width: 100%;
+
+}
+
+.fire img {
+    width: 20px;
+    height: 20px;
+}
+
+.trending span {
+    display: block;
+    text-align: center;
+}
+
+.trending p {
+    display: block;
+    text-align: center;
+    font-size: 17px;
+    padding: 10px;
+    font-weight: 600;
+}
+
+.trending .museum span img {
+    position: relative;
+    top: 5px;
+    margin-right: 7px;
+}
+
+/*Инфа про музеи 2*/
+
+.big--text {
+    padding: 50px 0;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    width: 800px;
+}
+
+.banner img {
+    width: 1200px;
+    height: 600px;
+    margin: auto;
+    padding-bottom: 30px;
+    justify-content: center;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*Без фона*/
+.features {
+    background: url("../img/fon.png") no-repeat center center fixed;
+    background-size: cover;
+    padding: 80px 0;
+}
+.features>.container{
+    display: flex;
+}
+
+.features h2 {
+    margin-top: 20px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.features .info {
+    display: flex;
+    justify-content: center;
+
+}
+
+.features .info .block {
+    text-align: center;
+    margin: 30px 2%;
+}
+
+.features .icon {
+    height: 60px;
+    width: 60px;
+}
+
+.features .arr{
+    width: 25px;
+    height: min-content;
+}
+
+.features .info .block {
+    margin-bottom: 15px;
+}
+
+.projects {
+    padding: 100px 0;
+}
+
+.projects h3 {
+    text-align: center;
+    font-size: 30px;
+}
+
+.projects .images {
+    padding: 100px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+.projects .images img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.projects .images #image1{
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.projects .images #image2{
+    grid-row: 1;
+    grid-column: 2;
+}
+.projects .images #image3{
+    grid-row: 1/ span 3;
+    grid-column: 3;
+    object-fit: cover;
+    height: calc(100% - 50px);
+}
+.projects .images #image4{
+    grid-row: 2;
+    grid-column: 1;
+}
+.projects .images #image5{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+
+
+
+
+
+
+.projects .see--all {
+    color: #fff;
+    background: #25211D;
+    padding: 12px 30px;
+    float: none;
+    display: block;
+    transition: all 500ms ease;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+    width: 100px;
+}
+
+.projects .see--all:hover {
+    transform: scale(1.1);
+}
+
+/*Номер */
+.number {
+    padding-bottom: 120px;
+
+}
+
+.number h3 {
+    margin-top: 60px;
+    font-size: 30px;
+    text-align: center;
+
+
+}
+
+.number p {
+    text-align: center;
+    margin: 30px 30px;
+
+}
+
+.number .blocks {
+    background: #1C140F;
+    margin-top: 30px;
+    border-radius: 10px;
+    padding: 40px 3%;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.number .blocks h4 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.number .blocks p {
+    width: 500px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.number .blocks input {
+    background: white;
+    height: 20px;
+    width: 300px;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    padding: 20px 30px;
+    font-size: 20px;
+    position: relative;
+    right: -120px;
+    z-index: 1;
+    padding-right: 120px;
+
+
+}
+
+.number .blocks input::placeholder {
+    color: #7c7771;
+}
+
+.number .blocks button {
+    border-radius: 5px;
+    background: #FA8305;
+    color: #fff;
+    transition: all 500ms ease;
+    padding: 9px 17px;
+    font-size: medium;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    z-index: 2;
+}
+
+.number .blocks button:hover {
+    background: #572e02;
+}
+
+/* Footer */
+footer {
+    background: #000;
+    padding: 50px 0;
+}
+
+footer .blocks {
+    display: flex;
+    justify-content: center;
+    padding: 0 500px;
+}
+
+footer .blocks p {
+    width: 300px;
+    margin: 15px 0;
+    margin: auto;
+}
+
+footer .blocks h4 {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+footer hr {
+    margin: 30px 0;
+    border: 0;
+    height: 0.6px;
+    background: #ccc;
+}
+
+footer>p {
+    text-align: center;
+}
+
+/* музеи */
+.work .blocks {
+    width: 1000px;
+    justify-content: center;
+    margin: auto;
+}
+
+.work h2 {
+    text-align: center;
+    color: #FA8305;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.work .block {
+    background-color: #333231;
+    margin: 50px 10px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.work .block .info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.work .block img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+}
+
+.work .block .see--all {
+    float: right;
+        background-color: #ef891b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    transition: all 500ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work .block .see--all:hover {
+    transform: scale(1.1);
+}
+
+.work .block p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.work .block h3 {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+/*Экспонаты*/
+.ecspon img {
+    padding: 50px;
+    transition: transform .2s;
+    /* Animation */
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.img:hover {
+    transform: scale(1.5);
+    /* (150% зум - Примечание: если масштаб слишком велик, он будет выходить за пределы видового экрана) */
+}
+
+
+
+.ecspon .see--all:hover {
+    transform: scale(1.1);
+}
+
+/* события */
+
+
+#carouselExampleCaptions {
+    padding: 50px 0;
+    height: 700px;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+.carousel-item{
+    height: 100%;
+}
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    object-fit: cover;
+}
+.hero a{
+    color: #fff;
+}
+.zap {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Центрирование по горизонтали */
+    justify-content: center; /* Центрирование по вертикали */
+    text-align: center;
+    color: #fff;
+}
+
+.zap h4 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.zap p {
+    font-size: 20px;
+    padding: 5px 30px;
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.arrow {
+    color: #DC7000;
+    font-size: 20px;
+    margin-right: 20px; /* Отступ между стрелкой и кнопкой */
+}
+
+.zap a {
+    color: #fff;
+    background: #DC7000;
+    border-radius: 5px;
+    text-align: center;
+    padding: 9px 17px;
+    transition: all 500ms ease;
+    text-decoration: none;
+}
+
+.zap a:hover {
+    transform: scale(1.1);
+}/*pages */
+
+.table .see--all {
+    float: right;
+        background-color: #ef891b;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    width: 80px;
+    transition: all 500ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.table .see--all:hover {
+    transform: scale(1.1);
+}
+.table{
+    background: #7c7771;
+    padding: 10px;
+    margin: auto;
+    bottom: 60%;
+
+}
+table {
+    border: 3px solid #000;
+ }
+ 
+ th {
+    border: 1px solid #000;
+ }
+ td {
+    border: 1px solid #000;
+    text-align: center;
+ }
+ .menu {
+    margin-bottom: 50px;
+    text-align: center;
+    width: 100%;
+    overflow-x: hidden;
+    
+}
+.menu h2{
+    padding: 20px;
+    color: #FA8305;
+    
+}
+/*login*/
+
+.feedback {
+    padding: 70px 0;
+    background: #1C140F;
+}
+
+.feedback h2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.feedback p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.feedback form {
+    margin: 80px auto;
+    width: 600px;
+}
+
+.feedback form .inline {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback form .inline>div {
+    width: 50%;
+}
+
+.feedback form label {
+    color: #4F4F4F;
+    font-size: 14px;
+}
+
+.feedback form input,
+.feedback form textarea {
+    background: #2C2420;
+    border-radius: 10px;
+    border: 0.6px solid #CECECE;
+    display: block;
+    width: 90%;
+    padding: 15px 10px;
+    outline: none;
+    color: #fff;
+    margin-top: 7px;
+    margin-bottom: 20px;
+}
+
+.feedback form .one-line {
+    width: 96%;
+}
+
+.feedback form textarea {
+    resize: none;
+    height: 200px;
+}
+
+.feedback form button {
+    background: #DC7000;
+    border-radius: 5px;
+    border: 0;
+    float: right;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px 35px;
+    transition: all 500ms ease;
+    margin: 10px 70px;
+}
+
+.feedback form button:hover {
+    background: #b01414;
+}
+.feedback form a {
+    color: #fff;
+}
+
+/* Поиск */
+.highlight {
+    background-color: yellow;
+}
+
+.hide {
+    display: none;
+}
+.search{
+    width: 100px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+
+/* Обновленный main.css с базовыми стилями */
